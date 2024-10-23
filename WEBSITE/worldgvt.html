@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.cass" />
+    <link rel="icon" href="img/jollyroger.png" />
+    
+    <title>Organizations</title>
+  </head>
+
+  <body class="org">
+    <nav class="org-nav wrldldrs">
+      <a href="organizations.html" title="Go Back"
+        ><img src="img/one-piece-symbol.png"
+      /></a>
+    </nav>
+    <main class="worldgvt">
+      <div class="organization">
+        <a href="worldleaders.html" class="box gvt-ldrs"
+          ><img src="orgimg/wrldldrs.jpg" alt="" />
+          <h1>WORLD LEADERS</h1></a
+        >
+        <a href="marine.html" class="box gvt-marines"
+          ><img src="img/marines2.jpg" alt="" />
+          <h1>MARINES</h1></a
+        >
+      </div>
+    </main>
+  </body>
+</html>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  main.worldgvt {
+    width: 100%;
+    height: 100vh;
+    background-color: #05161a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  main.worldgvt h1 {
+    margin: 0;
+    padding: 0;
+  }
+  main.worldgvt .organization {
+    display: flex;
+    justify-content: space-between;    transform: skew(-24deg);
+  }
+  main.worldgvt a {
+
+    translate: 20px;
+    background-color: chocolate;
+    width: 1200px;
+    height: 400px;
+    margin: 0 20px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  main.worldgvt img {
+    width: 100%;
+    height: 100%;
+    translate: 150px;
+    transform: skew(24deg) scaleX(0.9);
+  }
+  main.worldgvt h1 {
+    z-index: 2;
+    position: relative;
+    left: 300px;
+    top: -200px;
+    color: rgb(0, 0, 0);
+    font-size: 5.5em;
+  }
+  main.worldgvt a.gvt-ldrs h1 {
+    left: 550px;
+    width: 50%;
+    text-align: right;
+  }
+  main.worldgvt a.gvt-marines h1 {
+    padding-left: 40px;
+    width: 50%;
+    text-align: left;
+  }
+  main.worldgvt a.gvt-ldrs {
+    border: 5px solid gold;
+  }
+  main.worldgvt a.gvt-ldrs h1 {
+    color: gold;
+  }
+
+  main.worldgvt a.gvt-marines {
+    border: 5px solid cyan;
+  }
+  main.worldgvt a.gvt-marines h1 {
+    color: cyan;
+    left: 0px;
+    top: -120px;
+  }
+  main.worldgvt a.gvt-marines img {
+    translate: -110px;
+    transform: skew(14deg) scaleX(1);
+    transition: transform 0.3s ease, ease 0.3s;
+  }
+  main.worldgvt a:hover{
+    transform: scale(1.2);
+    margin: 0 100px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .org-nav {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: #00000055;
+  display: flex;
+  align-items: center;
+}
+.org-nav a {
+  flex-grow: 1;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+}
+.org-nav a p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  width: 50%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.org-nav img {
+  height: 100%;
+  width: 200px;
+}
+@media (max-width: 768px) {
+  main.worldgvt a{
+    height: 500px;
+    margin: 0 40px;
+  }
+  main.worldgvt a:hover{
+    transform: scale(1.23);
+    margin: 0 100px;
+  }
+  main.worldgvt a.gvt-ldrs h1{
+    left: 950px;
+    transform: scaleY(2.5);
+    width: 20%;
+    font-size: 3em;
+  }
+  main.worldgvt a.gvt-marines h1 {
+    padding-left: 10px;
+    transform: scaleY(2);
+    font-size: 5em;
+    text-align: left;
+  }
+}
+</style>
